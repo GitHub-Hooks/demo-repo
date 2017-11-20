@@ -1,5 +1,5 @@
 const hooks = {
-  'new-pull-request': () => {
+  'compare-&-pull-request': () => {
     window.alert('Hello world')
   }
 }
