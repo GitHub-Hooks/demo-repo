@@ -1,5 +1,5 @@
 const hooks = {
-  'compare-&-pull-request': () => {
-    window.alert('Hello world')
+  'compare-&-pull-request': (meta) => {
+    window.alert(meta.branch)
   }
 }
