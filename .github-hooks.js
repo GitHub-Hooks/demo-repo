@@ -1,5 +1,5 @@
-const hooks = {
-  'open-a-pull-request': (meta) => {
+const GITHUB_UI_HOOKS = {
+  'pull-request-compare': (meta) => {
     if (/^(feat|feature|fix|docs|style|refactor|perf|test|chore)(\(\w+\))?\//.test(meta.branch)) {
       const branchName = meta.branch.split('/')
       const pullRequestTitle = `${branchName[0]}: ${branchName[1].replace(/-/g, ' ')}`;
